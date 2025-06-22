@@ -34,37 +34,9 @@ variable "default_cidr_b" {
   description = "https://cloud.yandex.ru/docs/vpc/operations/subnet-create"
 }
 
-variable "vpc_name" {
-  type        = string
-  default     = "develop"
-  description = "VPC network&subnet name"
-}
-
-variable "vm_web_nat" {
-  type        = bool
-  default     = true
-}
-
-variable "vm_web_platform_id" {
-  type        = string
-  default     = "standard-v3"
-}
-
 variable "vm_web_image_family" {
   type        = string
   default     = "ubuntu-2004-lts"
-}
-
-variable "vpc_subnet_name_a" {
-  type        = string
-  default     = "develop-ru-central1-a"
-  description = "https://cloud.yandex.ru/docs/overview/concepts/geo-scope"
-}
-
-variable "vpc_subnet_name_b" {
-  type        = string
-  default     = "develop-ru-central1-b"
-  description = "https://cloud.yandex.ru/docs/overview/concepts/geo-scope"
 }
 
 variable "vms_ssh_root_key" {
