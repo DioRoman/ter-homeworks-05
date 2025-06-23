@@ -4,19 +4,19 @@
 
 ## tflint
 
-src
+### src
 
 ![Снимок экрана 2025-06-23 180629](https://github.com/user-attachments/assets/d5905584-ff71-48e4-a95f-e01e80fadf9e)
 
 _Ошибки: Не используемые переменные. Отсутствие ограничения на версию провайдера._
 
-passwords
+### passwords
 
 ![Снимок экрана 2025-06-23 180647](https://github.com/user-attachments/assets/e08bf0c9-b292-4cb8-8384-4af4c55f28b9)
 
 _Ошибки: Отсутствие ограничения на версию провайдера._
 
-vms
+### vms
 
 ![Снимок экрана 2025-06-23 180502](https://github.com/user-attachments/assets/c06fcc30-94e0-47ed-999f-965d15a179f5)
 
@@ -28,27 +28,53 @@ docker pull bridgecrew/checkov
 
 docker run --rm --tty --volume $(pwd):/tf --workdir /tf bridgecrew/checkov --download-external-modules true --directory /tf
 
-vms
+### vms
 
 ![Снимок экрана 2025-06-23 175925](https://github.com/user-attachments/assets/af9796ac-8a18-4591-a46b-cb5ec75ced93)
 
 ![Снимок экрана 2025-06-23 175938](https://github.com/user-attachments/assets/e1340053-a272-4993-aa44-1f995b06db21)
 
-![Снимок экрана 2025-06-23 171100](https://github.com/user-attachments/assets/358da493-8229-44d5-9246-957f5e53fb54)
-
 _Ошибки: Требование указывать хеш коммита, а не имя ветки (main).Не используемые переменные. Отсутствие ограничения на версию провайдера._
-
 - обнаружена ВМ без назначенной группы безопасности на сетевом интерфейсе. (ingress, egress)
 - ВМ имеет публичный IP-адрес, что не соответствует рекомендациям безопасности. (типа надо NAT)
 - требование указывать хеш коммита или тег, а не имя ветки (main).
 
-passwords, src  
+### passwords, src  
 
 _Ошибки: Не выявлены._
 
 ![Снимок экрана 2025-06-23 175740](https://github.com/user-attachments/assets/e026675b-cd35-46fd-8d9b-1c5e5d8c0cd0)
 
 ![Снимок экрана 2025-06-23 175837](https://github.com/user-attachments/assets/a3e844af-3631-46a6-83fb-d3ec2886dbf6)
+
+# Задание 2
+
+Возьмите ваш GitHub-репозиторий с выполненным ДЗ 4 в ветке 'terraform-04' и сделайте из него ветку 'terraform-05'.
+Повторите демонстрацию лекции: настройте YDB, S3 bucket, yandex service account, права доступа и мигрируйте state проекта в S3 с блокировками. Предоставьте скриншоты процесса в качестве ответа.
+
+https://github.com/DioRoman/ter-homeworks-05
+
+S3 Bucket 
+
+![Снимок экрана 2025-06-23 041933](https://github.com/user-attachments/assets/0fbe30aa-403d-4ca1-96d0-78a326c8feca)
+
+![Снимок экрана 2025-06-23 050704](https://github.com/user-attachments/assets/57f127d6-bce9-48df-8c12-5712c024ba16)
+
+YDB
+
+![Снимок экрана 2025-06-23 183958](https://github.com/user-attachments/assets/31e15a6a-5a6e-400b-bf23-f9370ddec514)
+
+![Снимок экрана 2025-06-23 142930](https://github.com/user-attachments/assets/089409fc-e3cf-4cc0-be5a-fa5f061d4405)
+
+Пришлите ответ об ошибке доступа к state.
+
+![Снимок экрана 2025-06-23 143244](https://github.com/user-attachments/assets/6621bb44-5cf8-47b6-a7cc-7abddadf1a6c)
+
+Принудительно разблокируйте state. Пришлите команду и вывод.
+
+![Снимок экрана 2025-06-23 143920](https://github.com/user-attachments/assets/cf5344ba-1999-4e1c-8188-d953c1f2b69a)
+
+# Задание 3
 
 
 
