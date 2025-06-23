@@ -16,7 +16,7 @@ module "vpc_analitics" {
 }
 
 module "marketing-vm" {
-  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
+  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=4d05fab"
   env_name       = var.vms_mod_marketing[0].env_name
   network_id     = module.vpc_marketing.network_id
   subnet_zones   = var.vms_mod_marketing[0].subnet_zones
@@ -36,7 +36,7 @@ module "marketing-vm" {
 }
 
 module "analitics-vm" {
-  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
+  source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=4d05fab"
   env_name       = var.vms_mod_analitics[0].env_name
   network_id     = module.vpc_analitics.network_id
   subnet_zones   = var.vms_mod_analitics[0].subnet_zones
@@ -58,7 +58,6 @@ module "analitics-vm" {
 
 data "template_file" "cloudinit" {
   template = file("./cloud-init.yml")
-
     vars = {
     ssh_public_key     = file(var.vms_ssh_root_key)
   }
