@@ -76,8 +76,18 @@ YDB
 
 # Задание 3
 
+В общем ситуация следующая: я проверил свой код и исправли, до того как прочитал требования задания. Я же его уже и залил.
 
+Очень долго все переделывать, но вкратце могу описать:
+- убрал неиспользуемые переменные
+- добавил проверку версий
+- исправил main на конкретный коммит
 
+Вот коммиты
+https://github.com/DioRoman/ter-homeworks-05/commit/890bf88698ea15eb20f5596eb7183400a5e462aa
+https://github.com/DioRoman/ter-homeworks-05/commit/c6964529568f1c6df3b6a2420f49e5dcfb280ba3
+
+Ветку 3.0 я создал, но она уже была исправленная.
 
 # Задание 4
 
@@ -90,6 +100,16 @@ https://github.com/DioRoman/ter-homeworks-05/blob/5.0/src/validation_vars.tf
 ![Снимок экрана 2025-06-23 154950](https://github.com/user-attachments/assets/23e72e47-e54f-48bb-8f3b-db6497b2b6be)
 
 ![Снимок экрана 2025-06-23 155906](https://github.com/user-attachments/assets/bec039fa-b875-4748-8667-6e01368114b5)
+
+# Задание 5*
+
+Всё тут:
+
+https://github.com/DioRoman/ter-homeworks-05/blob/5.0/src/validation_vars.tf
+
+![Снимок экрана 2025-06-23 155906](https://github.com/user-attachments/assets/c49ec8d9-ddb2-484d-b476-c89721b5ba89)
+
+
 
 
 
