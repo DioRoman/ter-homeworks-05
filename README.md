@@ -79,3 +79,18 @@ YDB
 
 
 
+# Задание 4
+
+https://github.com/DioRoman/ter-homeworks-05/blob/5.0/src/validation_vars.tf
+
+![Снимок экрана 2025-06-23 154810](https://github.com/user-attachments/assets/01b31fdb-dfbd-4431-8a3a-5d55c1d5c4c5)
+
+![Снимок экрана 2025-06-23 154900](https://github.com/user-attachments/assets/21b22b66-a62b-4223-a8df-7d3b2003a61c)
+
+![Снимок экрана 2025-06-23 154950](https://github.com/user-attachments/assets/23e72e47-e54f-48bb-8f3b-db6497b2b6be)
+
+![Снимок экрана 2025-06-23 155906](https://github.com/user-attachments/assets/bec039fa-b875-4748-8667-6e01368114b5)
+
+
+
+
